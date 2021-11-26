@@ -9,6 +9,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { SignupComponent } from './signup/signup.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { CategoriesComponent } from './categories/categories.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
       HomePageComponent,
       LoginPageComponent,
       SignupComponent,
-      ForgotPasswordComponent
+      ForgotPasswordComponent,
+      CategoriesComponent
   ],
   imports: [
     BrowserModule,
