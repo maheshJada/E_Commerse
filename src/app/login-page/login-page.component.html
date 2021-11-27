@@ -1,3 +1,4 @@
+
 <body>
     <h1>Login To Suta</h1>
     <div class="container">
@@ -16,13 +17,18 @@
           required
         />
         <br />
-        <a routerLink="/forgotpassword">Forgot Password? </a>
-        <button routerLink="/login" routerLinkActive="active" type="submit">
-          Login
-        </button>
+        
+      
+        <a routerLink="/forgotpassword">Forgot Password? </a> 
+    
+        <button type="submit"  (click)="Login()" class="btn btn-primary mt-3">Login</button>
+        
+     
+
+
         <br />
-        <!-- <input type="checkbox" checked="checked" /> Remember me -->
-        <!-- <button type="button" class="cancelbtn">Cancel</button> -->
+         <!-- <input type="checkbox" checked="checked" /> Remember me -->
+         <!-- <button type="button" class="cancelbtn">Cancel</button> -->
         <!-- Forgot <a href="#"> password? </a> -->
         <!-- Don't have an account  <a href=".">Signup</a> -->
       </div>
