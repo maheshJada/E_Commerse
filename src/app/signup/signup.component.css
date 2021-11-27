@@ -1,15 +1,19 @@
 * {box-sizing: border-box;}
+head{
+    background-color:snow;
+}
 
 body {
   margin: 0;
   padding: 0;
   font-family: Calibri, Helvetica, sans-serif;
+
   /* background-color: rgba(169, 228, 243, 0.884); */
 }
 .container {
   width: 35%;
   padding: 25px;
-  background-color: lightblue;
+  background-color: rgb(173, 226, 230);
   display: grid;
   align-items: center;
   place-content: center;
@@ -20,9 +24,9 @@ h1 {
   text-align: center;
 }
 button {
-  background-color: #4caf50;
+  background-color: #93bdd8;
   width: 100%;
-  color: rgb(58, 48, 42);
+  color: rgb(119, 59, 19);
   padding: 15px;
   margin: 10px auto;
   /* border: none; */
