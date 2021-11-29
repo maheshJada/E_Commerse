@@ -12,8 +12,8 @@ export class MensWearComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  Forgot(){
-    this.router.navigate(['login'])
+  Mens(){
+    this.router.navigate(['suta-order'])
   }
 
 }
