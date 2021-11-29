@@ -1,9 +1,14 @@
 .column {
     float: left;
-    width: 33.33%;
+    width: 30%;
     padding: 5px;
   }
   .row1::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .row2::after {
     content: "";
     clear: both;
     display: table;
@@ -16,7 +21,7 @@
     }
     .column {
       float: left;
-      width: 33.33%;
+      width: 30%;
       padding: 5px;
     }
     .row3::after {
