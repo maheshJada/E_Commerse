@@ -20,7 +20,7 @@ const routes: Routes = [
     {path:'sarees' , component:SareesComponent},
     {path:'home-living' , component:HomeLivingComponent},
     {path:'mens-wear' , component:MensWearComponent},
-    {path:' loungwear' , component:MensWearComponent}
+    {path:'loungwear' , component:LoungwearComponent},
 ];
 
 @NgModule({

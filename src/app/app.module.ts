@@ -13,6 +13,7 @@ import { SareesComponent } from './sarees/sarees.component';
 import { HomeLivingComponent } from './home-living/home-living.component';
 import { MensWearComponent } from './mens-wear/mens-wear.component';
 import { LoungwearComponent } from './loungwear/loungwear.component';
+import { SutaOrderComponent } from './suta-order/suta-order.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { LoungwearComponent } from './loungwear/loungwear.component';
       SareesComponent,
       HomeLivingComponent,
       MensWearComponent,
-      LoungwearComponent
+      LoungwearComponent,
+      SutaOrderComponent
   ],
   imports: [
     BrowserModule,
