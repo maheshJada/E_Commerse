@@ -6,14 +6,18 @@ body {
 	line-height: 1.6;
 	margin: 0;
 	min-height: 100vh;
-    background-color: #bb9292
+    background-color: #bb9292;
+	text-align: right;
+	
 }
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
+list-unstyled{
+	text-align: center;
+}
 
 h2,
 h3,
@@ -24,6 +28,7 @@ a {
 a {
 	text-decoration: none;
 }
+
 
 
 
