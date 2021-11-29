@@ -58,52 +58,6 @@ list-unstyled{
   .row3 {
     display: flex;
   }
-
-
-
-
-
-h2,
-h3,
-a {
-	color: #34495e;
-}
-
-a {
-	text-decoration: none;
-}
-
-
-
-
-.logo {
-	margin: 0;
-	font-size: 1.45em;
-}
-
-.main-nav {
-	margin-top: 5px;
-
-}
-.logo a,
-.main-nav a {
-	padding: 10px 15px;
-	text-transform: uppercase;
-	text-align: center;
-	display: block;
-}
-
-.main-nav a {
-	color: #34495e;
-	font-size: .99em;
-}
-
-.main-nav a:hover {
-	color: #718daa;
-}
-
-
-
 .header {
 	padding-top: .5em;
 	padding-bottom: .5em;
@@ -115,37 +69,4 @@ a {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-}
-
-
-
-/* ================================= 
-  Media Queries
-==================================== */
-
-
-
-@media (min-width: 769px) {
-	.header,
-	.main-nav {
-		display: flex;
-	}
-	.header {
-		flex-direction: column;
-		align-items: center;
-    	
-		width: 900%;
-		margin: 0 auto;
-		max-width: 1280px;
-	}
-	
-
-}
-
-@media (min-width: 1025px) {
-	.header {
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
 }
