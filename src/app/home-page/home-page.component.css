@@ -18,6 +18,50 @@ ul {
 list-unstyled{
 	text-align: center;
 }
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  .row1::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .row1 {
+    display: flex;
+  }
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  .row2::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .row2 {
+    display: flex;
+  }
+
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  .row3::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .row3 {
+    display: flex;
+  }
+
+
+
+
 
 h2,
 h3,
