@@ -14,6 +14,8 @@ import { HomeLivingComponent } from './home-living/home-living.component';
 import { MensWearComponent } from './mens-wear/mens-wear.component';
 import { LoungwearComponent } from './loungwear/loungwear.component';
 import { SutaOrderComponent } from './suta-order/suta-order.component';
+import { ApiService } from './shared/api.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -32,9 +34,10 @@ import { SutaOrderComponent } from './suta-order/suta-order.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import {HttpClient} from "@angular/common/http"
+import { ApiService } from '../shared/api.service';
 
 @Component({
   selector: 'app-forgot-password',
@@ -7,12 +9,30 @@ import { Router } from '@angular/router';
   styleUrls: ['./forgot-password.component.css']
 })
 export class ForgotPasswordComponent implements OnInit {
+  body={Email:""}
 
-  constructor(private router: Router) { }
+  constructor(private api: ApiService) { }
 
   ngOnInit(): void {
   }
-  Forgot(){
-    this.router.navigate(['login'])
+  
+  handleChanges(event:any,type:any){
+    if(type=='email'){
+this.body.Email=event.target.value
+    }
   }
+  Forgot(){
+    let formData= new FormData
+    formData.append("Email",this.body.Email)
+
+  // Forgot(){
+  //   this.router.navigate(['login'])
+  // }
+  console.log(this.body)
+  this.api.forgot(formData)
+    .subscribe(result => {
+      alert("success");
+    })
+  }
+
 }

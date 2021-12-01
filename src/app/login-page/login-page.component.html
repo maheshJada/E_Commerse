@@ -8,13 +8,14 @@
            <input type="text" placeholder="Enter Username" name="username" required>  -->
       <div>
         <label>Email Or Name: </label>
-        <input type="text" placeholder="Enter Email" name="email" required />
+        <input type="text" placeholder="Enter Email" name="email" required (change)="handleChanges($event,'email')" />
         <label>Password : </label>
         <input
           type="password"
           placeholder="Enter Password"
           name="password"
           required
+          (change)="handleChanges($event,'password')"
         />
         <br />
         
