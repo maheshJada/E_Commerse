@@ -37,12 +37,13 @@ this.body.Name=event.target.value
     formData.append("Name",this.body.Name)
     formData.append("Password",this.body.Password)
     console.log(this.body)
-    this.api.login(formData)
-      .subscribe(result => {
-        alert("success");
-      })
+    // this.api.login(formData)
+    //   .subscribe(result => {
+    //     alert("success");
+    //   })
 this.api.login(formData).subscribe(result=>{
-  if(result)  this.router.navigate(['/categories'])
+  if(result) this.router.navigate(['/categories']) ,alert("success");
+  else alert("fail")
 })
     // this.router.navigate(['categories'])
   }

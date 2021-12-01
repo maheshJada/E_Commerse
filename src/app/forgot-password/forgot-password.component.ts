@@ -11,7 +11,7 @@ import { ApiService } from '../shared/api.service';
 export class ForgotPasswordComponent implements OnInit {
   body={Email:""}
 
-  constructor(private api: ApiService) { }
+  constructor(private api: ApiService,private router:Router) { }
 
   ngOnInit(): void {
   }
@@ -28,10 +28,13 @@ this.body.Email=event.target.value
   // Forgot(){
   //   this.router.navigate(['login'])
   // }
-  console.log(this.body)
-  this.api.forgot(formData)
-    .subscribe(result => {
-      alert("success");
+  // console.log(this.body)
+  // this.api.forgot(formData)
+  //   .subscribe(result => {
+  //     alert("success");
+  //   })
+    this.api.forgot(formData).subscribe(result=>{
+      if(result)  this.router.navigate(['/login'])      
     })
   }
 

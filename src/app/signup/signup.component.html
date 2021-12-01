@@ -4,9 +4,10 @@
       <!-- <label>Username : </label>   
            <input type="text" placeholder="Enter Username" name="username" required>  -->
         <label>Name: </label>
-        <input type="text" placeholder="Enter Name" name="name" required (change)="handleChanges($event,'Name')" />
+        <input type="text" placeholder="Enter Name" name="name" required (change)="handleChanges($event,'Name')"  />
         <label>Email: </label>
-        <input type="text" placeholder="Enter Email" name="email" required (change)="handleChanges($event,'Email')" />
+        <input type="text" placeholder="Enter Email" name="email" required (change)="handleChanges($event,'Email')"  />
+        <p *ngIf="!valid.Email" class="error-message" >Your mail is incorrect</p>
         <label>Password : </label>
         <input
           type="password"
